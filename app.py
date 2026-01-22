@@ -28,7 +28,7 @@ with st.sidebar:
         2. The AI reads and understands the content.
         3. Ask any question, and it finds the exact answer from your file.
         
-        *Built with LangChain, Gemini, and Streamlit.*
+        *Built with LangChain, Groq, and Streamlit.*
         """
     )
     

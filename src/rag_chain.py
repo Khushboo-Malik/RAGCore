@@ -1,12 +1,14 @@
-from langchain_google_genai import ChatGoogleGenerativeAI
+import os
+from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
 
 def create_rag_chain(retriever):
-    # CHANGED: Using a valid model from your list: "gemini-2.5-flash"
-    llm = ChatGoogleGenerativeAI(
-        model="gemini-2.5-flash", 
+    # CHANGED: Using Groq with Llama 3 model
+    # It automatically looks for 'GROQ_API_KEY' in your environment
+    llm = ChatGroq(
+        model="llama-3.1-8b-instant", 
         temperature=0
     )
 
