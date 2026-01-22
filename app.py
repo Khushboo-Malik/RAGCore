@@ -11,9 +11,9 @@ from src.retriever import get_retriever
 from src.rag_chain import create_rag_chain
 
 # --- CONFIGURATION ---
-st.set_page_config(page_title="AskYourDocs", page_icon="🧠")
+st.set_page_config(page_title="RecallAI", page_icon="🔎🧠")
 
-st.title("AskYourDocs 🧠")
+st.title("RecallAI 🔎🧠")
 st.caption("Upload a PDF and ask questions about its content.")
 
 # Sidebar
